@@ -1,47 +1,177 @@
-body{
-    margin:0;
-    padding:0;
-    background:#000000;
-    font-family:Arial, sans-serif;
-}
+  :root {
+            --sidebar-width: 300px;
+            --primary-black: #000000;
+            --text-gray: #4a4a4a;
+        }
 
-.container{
-    width:80%;
-    max-width:900px;
-    margin:40px auto;
-    background:rgb(0, 0, 0);
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
 
-.profile{
-    text-align:center;
-    color: #ffffff;
-}
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
 
-.profile img{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-}
+        .container {
+            width: 900px;
+            background-color: white;
+            display: flex;
+            flex-direction: column; /* Cambiado para permitir que el CV y las fotos fluyan hacia abajo */
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
 
-h1{
-    margin:10px 0;
-    color:#ffffff;
-}
+        .cv-main-wrapper {
+            display: flex; /* Mantiene el layout de dos columnas del CV */
+            width: 100%;
+        }
 
-.section{
-    margin-top:30px;
-    color: #ffffff;
-}
+        /* --- SIDEBAR IZQUIERDO --- */
+        .sidebar {
+            width: var(--sidebar-width);
+            background-color: var(--primary-black);
+            color: white;
+            padding: 50px 30px;
+        }
 
-.section h2{
-    color:#0077cc;
-    border-bottom:2px solid #0077cc;
-    padding-bottom:5px;
-}
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 0 auto 50px auto;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-ul{
-    padding-left:20px;
-}
+        .sidebar-section {
+            margin-bottom: 40px;
+        }
+
+        .sidebar-title {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .sidebar-item {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #dcdcdc;
+            line-height: 1.4;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding-left: 15px;
+        }
+
+        .skills-list li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .skills-list li::before {
+            content: "•";
+            position: absolute;
+            left: -15px;
+        }
+
+        /* --- CONTENIDO PRINCIPAL (CV) --- */
+        .main-content {
+            flex: 1;
+            padding: 60px 50px;
+            color: var(--primary-black);
+        }
+
+        .header {
+            margin-bottom: 50px;
+        }
+
+        .header h1 { font-size: 3.5rem; letter-spacing: 2px; line-height: 1; font-weight: 700; }
+        .header h2 { font-size: 3.5rem; font-weight: 300; line-height: 1; margin-bottom: 15px; }
+
+        .job-title {
+            background-color: var(--primary-black);
+            color: white;
+            display: inline-block;
+            padding: 6px 30px;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-left: 100px;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .timeline-container {
+            border-left: 2px solid #e0e0e0;
+            margin-left: 12px;
+            padding-left: 30px;
+        }
+
+        /* --- SECCIÓN DE CERTIFICACIONES GRANDES --- */
+        .certifications-full-width {
+            padding: 40px 50px;
+            background-color: #fff;
+            border-top: 5px solid var(--primary-black);
+        }
+
+        .cert-large-item {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .cert-large-item h3 {
+            text-align: left;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            color: var(--primary-black);
+        }
+
+        .cert-image-container {
+            width: 100%;
+            background: #fafafa;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .cert-image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            /* Simulación de tamaño grande para el placeholder */
+            min-height: 400px; 
+            object-fit: contain;
+        }
+
+        .cert-description {
+            margin-top: 15px;
+            text-align: left;
+            font-style: italic;
+            color: var(--text-gray);
+        }

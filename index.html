@@ -3,43 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi CV</title>
+    <title>CV Carlos Méndez - Certificaciones Grandes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
+    <!-- Bloque Superior: El CV tradicional -->
+    <div class="cv-main-wrapper">
+        <aside class="sidebar">
+            <div class="profile-pic">
+                <div style="background-color: #444; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white;"><img src="img/perfilcv.jpeg" alt=""></div>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-title">Contacto</div>
+                <div class="sidebar-item">911-234-567</div>
+                <div class="sidebar-item">hola@unsitiogenial.es</div>
+                <div class="sidebar-item">AAHH pedro Huilca<br>Huanuco Amarilis</div>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-title">Formación</div>
+                    <div class="sidebar-item">
+                <strong>Universidad Nacional Hermilio Valdizan</strong><br>
+                Estudiante Ingenieria De Sistemas<br>2022 - 2026
+                    </div>
 
-    <div class="profile">
-        <img src="img/perfil.jpg" alt="Foto Perfil">
-        <h1>DELVER MELGAREJO MORENO</h1>
-        <p>Desarrollador Web Junior</p>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-title">Habilidades</div>
+                <ul class="skills-list">
+                <li>Programacion</li>
+                <li>Redes</li>
+                <li>Habilidades Blandas</li>
+                <li>Base de Datos</li>
+                <li>Software de Gestión</li>
+            </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1>DELVER</h1>
+            <h2>MELGAREJO MORENO</h2>
+            </header>
+
+            <section class="content-section">
+                <div class="section-header">👤 Perfil Personal</div>
+                <div class="timeline-container">
+                <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
+                    Soy egresado de la carrera de Ingeniería de Sistemas, con interés en el desarrollo de software, 
+                    bases de datos y tecnologías de la información. Me caracterizo por ser responsable, 
+                    proactivo y con capacidad para trabajar en equipo y adaptarme a nuevos retos
+                    tecnológicos. Busco seguir desarrollando mis habilidades profesionales
+                    y aportar soluciones eficientes e innovadoras en el área de sistemas.
+                </p>
+            </div>
+            </section>
+
+            <section class="content-section">
+                <div class="section-header">💼 Experiencia Laboral</div>
+
+                <div class="timeline-container">
+                    <p>Dental Express (Enero 2026 - Actualidad)</p> <br>
+                    <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
+                        Desarrollé un sistema ERP para la clínica dental DentalExpress, enfocado
+                        en la administración de pacientes, citas, tratamientos, historial clínico,
+                        inventario y facturación, contribuyendo a optimizar los procesos internos y 
+                        mejorar la atención al cliente. Me caracterizo por ser responsable, 
+                        proactivo y con capacidad para adaptarme a nuevos desafíos tecnológicos.
+                    </p>
+                </div>
+            
+            
+            </section>
+
+            <section class="content-section">
+            <div class="section-header">🌐 Idiomas</div>
+            <ul class="languages-list timeline-container" style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
+                <li>Español Nativo</li>
+                <li>Inglés Nivel Basico</li>
+            </ul>
+        </section>
+        </main>
     </div>
 
-    <div class="section">
-        <h2>Sobre mí</h2>
-        <p>
-            Estudiante de ingeniería de sistemas apasionado por el desarrollo web,
-            Docker y tecnologías cloud.
-        </p>
-    </div>
+    <!-- Bloque Inferior: Certificaciones GRANDES -->
+    <section class="certifications-full-width">
+        <div class="section-header" style="font-size: 2rem; margin-bottom: 40px;">📜 Mis Certificaciones</div>
 
-    <div class="section">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Docker</li>
-            <li>Linux</li>
-        </ul>
-    </div>
+        <!-- Certificado 1 -->
+        <div class="cert-large-item">
+            <h3>Certificación De Ingles basico</h3>
+            <div class="cert-image-container">
+                <!-- Reemplazar con la ruta de tu imagen real -->
+                <img src="img/certiIngles.jpeg" alt="Certificado 1">
+            </div>
+        </div>
 
-    <div class="section">
-        <h2>Contacto</h2>
-        <p>Email: demor@ejemplo.com</p>
-        <p>GitHub: github.com/deMM</p>
-    </div>
 
+
+    </section>
 </div>
 
 </body>
